@@ -1,5 +1,21 @@
 # weather-server MCP Server
 
+Sample code to run Roo Code (Roo Cline) in a devcontainer environment. Referenced from https://note.com/npaka/n/n4216cfc51794
+
+Cline (Roo Code) MCP Server configuration should include the following:
+
+````json
+{
+  "mcpServers": {
+    "my-weather-server": {
+      "command": "/usr/local/bin/node",
+      "args": ["/workspaces/weather-server/build/index.js"]
+    }
+  }
+}
+
+---
+
 A Model Context Protocol server
 
 This is a TypeScript-based MCP server that implements a simple notes system. It demonstrates core MCP concepts by providing:
@@ -11,16 +27,19 @@ This is a TypeScript-based MCP server that implements a simple notes system. It 
 ## Features
 
 ### Resources
+
 - List and access notes via `note://` URIs
 - Each note has a title, content and metadata
 - Plain text mime type for simple content access
 
 ### Tools
+
 - `create_note` - Create new text notes
   - Takes title and content as required parameters
   - Stores note in server state
 
 ### Prompts
+
 - `summarize_notes` - Generate a summary of all stored notes
   - Includes all note contents as embedded resources
   - Returns structured prompt for LLM summarization
@@ -28,16 +47,19 @@ This is a TypeScript-based MCP server that implements a simple notes system. It 
 ## Development
 
 Install dependencies:
+
 ```bash
 npm install
-```
+````
 
 Build the server:
+
 ```bash
 npm run build
 ```
 
 For development with auto-rebuild:
+
 ```bash
 npm run watch
 ```
