@@ -4,7 +4,7 @@ Sample code to run Roo Code (Roo Cline) in a devcontainer environment. Reference
 
 Cline (Roo Code) MCP Server configuration should include the following:
 
-````json
+```json
 {
   "mcpServers": {
     "my-weather-server": {
@@ -13,6 +13,7 @@ Cline (Roo Code) MCP Server configuration should include the following:
     }
   }
 }
+```
 
 ---
 
@@ -50,7 +51,7 @@ Install dependencies:
 
 ```bash
 npm install
-````
+```
 
 Build the server:
 
