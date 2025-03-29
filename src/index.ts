@@ -28,7 +28,6 @@ import {
   OpenWeatherResponse,
   WeatherData,
 } from "./types.js";
-import { request } from "http";
 
 // 環境変数の読み込み
 dotenv.config({ path: "/workspaces/weather-server/.env" });
